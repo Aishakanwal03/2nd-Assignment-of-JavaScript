@@ -113,16 +113,355 @@
 
 // Question # 14
 
-var items =["cake", "apple pie", "cookies", "chips", "patties"]
-var food = prompt("Welcom to ABC Bakery.What do you want to order sir/ma'am")
-var flag = false
-for (i= 0; i < food.length; i++){
-    if (items[i] === food){
-        document.write(food+" is available at index " + i)
-        flag = true
-        break   
+// var items =["cake", "apple pie", "cookies", "chips", "patties"]
+// var food = prompt("Welcom to ABC Bakery.What do you want to order sir/ma'am")
+// var flag = false
+// for (i= 0; i < food.length; i++){
+//     if (items[i] === food){
+//         document.write(food+" is available at index " + i)
+//         flag = true
+//         break   
+//     }
+// }
+// if (flag == false){
+//     document.write("We are sorry "+food+" is not available at our bakery")
+// }
+
+// Question # 15
+
+
+
+// Question # 16
+
+// var university = "University of Karachi"
+// var sp = university.split("")
+// for (element of sp){
+//     document.write(element+"<br>")
+// }
+
+// Question # 17
+
+// var userInput = prompt("Enter some text:")
+// document.write(userInput[userInput.length - 1])
+
+// Question # 18
+
+// var string = "The quick brown fox jumps over the lazy dog"
+// var strArray = string.split(" ")
+// count = 0
+// for (element of strArray){
+//     if (element.toLowerCase() === "the"){
+//       count++  
+//     }
+// }
+// document.write("Text: "+string+ "<br>")
+// document.write("There are "+count+ " occurances of word 'the' ")
+
+// ******CHAPTER # 1******
+// Question # 1
+
+// var takesint = parseFloat(prompt("Enter a positive integer"))
+// document.write("<b>number:</b> "+ takesint)
+
+// var round = Math.round(takesint)
+// document.write("<b><br>round off value:</b> "+ round)
+
+// var floor = Math.floor(takesint)
+// document.write("<b><br>floor value:</b> "+ floor)
+
+// var ceil = Math.ceil(takesint)
+// document.write("<b><br>ceil value:</b> "+ ceil)
+
+// Question # 2
+
+// var takesint = parseFloat(prompt("Enter a negagtive integer"))
+// document.write("<b>number:</b> "+ takesint)
+
+// var round = Math.round(takesint)
+// document.write("<b><br>round off value:</b> "+ round)
+
+// var floor = Math.floor(takesint)
+// document.write("<b><br>floor value:</b> "+ floor)
+
+// var ceil = Math.ceil(takesint)
+// document.write("<b><br>ceil value:</b> "+ ceil)
+
+// Question # 3
+
+// var value = prompt("Enter value")
+// var absolute = Math.abs(value)
+// document.write("The absolute value of "+value+" is "+ absolute)
+
+// Question # 4
+
+// var dice = Math.ceil(Math.random()*6)
+// document.write("Random dice value: " + dice + "<br>")
+
+// Question # 5
+
+// var coin = Math.ceil(Math.random()*2)
+
+// if (coin == 2){
+//     document.write( coin )
+//     document.write("<br>Random coin value: Heads" )
+// }else {
+//     document.write(coin )
+//     document.write("<br>Random coin value: Tails" )
+// }
+
+// Question # 6
+
+// var randomNumber = Math.ceil(Math.random()*100)
+// document.write("Random number between 1 and 100: " + randomNumber + "<br>")
+
+// Question # 7
+
+// var weight = prompt("Enter your weight in Kilograms")
+// var arr = weight.split()
+
+
+
+
+// Question # 8
+
+// var input = parseInt(prompt("Enter a number between 1 and 10:"))
+// var randomNumber = Math.ceil(Math.random()*10)
+// if (input === randomNumber){
+//   document.write("Congratulations! You guess the right secret number")
+// }else{
+//   document.write("Try Again!")
+// }
+
+// ******CHAPTER # 31-34******
+// Question # 1
+
+// var date = new Date()
+// document.write(date)
+
+// Question # 2
+
+// var date = new Date()
+// var monthNames = ["January","February","March","Aprail","May","June","July","August","September","Octuber","November","December"];
+// var month = date.getMonth()
+// var currentMonth = monthNames[month]
+// document.write("Current month: "+currentMonth)
+
+// Question # 3
+
+// var date = new Date()
+// var daysName = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+// var day = date.getDay()
+// var currentDay = daysName[day]
+// document.write("Today is "+currentDay)
+
+// Question # 4
+
+// var date = new Date()
+// var daysName = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+// var day = date.getDay()
+// var currentDay = daysName[day]
+// if (currentDay=== "Sun" || currentDay=== "Sat"){
+//   document.write("It's Fun Day!")
+// }
+
+// Question # 5
+
+// var date = new Date()
+// var d = date.getDate()
+// if (date <= 15){
+//   document.write("First fifteen days of the month")
+// }else{document.write("Last days of month")
+
+// }
+
+
+// Question # 6
+
+// var currentDatetime = new Date()
+// document.write("<b>Current Date: </b>"+currentDatetime)
+
+// var millSec = currentDatetime.getTime();
+// document.write("<br><b> Elapsed milliseconds since January 1 , 1970:</b> "+millSec)
+
+// var currMins = (millSec/1000*60)
+// document.write("<br><b> Elapsed minutes since January 1 , 1970: </b>"+currMins)
+
+// Question # 7
+
+// var date = new Date()
+// var hour = date.getHours()
+// if (hour <= 12 ){
+//     document.write("<b>It's AM</b>")
+// }else {
+//     document.write("<b>It's PM</b>")
+// }
+
+// Question # 8
+
+// var date = new Date()
+// var setMonth = date.setMonth(11)
+// var setDate = date.setDate(31)
+
+// document.write("Later date: "+date)
+
+// Question # 9
+// var RamadanDate = new Date("June 18, 2015")
+// var ramadanMill = RamadanDate.getTime()
+// var date = new Date()
+// var currentMill = date.getTime()
+// var diff = currentMill - ramadanMill
+// var days = diff/(1000*60*60*24)
+// days = Math.round(days)
+// document.write(days+ " days have passed since 1st Ramadan, 2015 ")
+
+// Question # 10
+
+// var refDate = new Date("Dec 5, 2015")
+// var begin2015 = new Date("Jan 1,2015")
+// var refMili = refDate.getTime()
+// var beginMili = begin2015.getTime()
+// var elapsedSec = refMili - beginMili
+// elapsedSec = elapsedSec/(1000)
+// document.write(elapsedSec)
+
+// Question # 11
+
+// var date = new Date()
+// var date2 = new Date()
+// var hour = date.getHours()
+// var anHourAhead = date2.setHours(hour - 1)
+// document.write("Current Date: "+date+ "<br>")
+// document.write("1 Hour ago, it was "+date2)
+
+// Question # 12
+
+// var date = new Date()
+// var date2 = new Date()
+// var year = date.getFullYear()
+// var yearsAhead = date2.setFullYear(year - 100)
+// alert("Current Date: "+date+ "\n 100 years back, it was "+date2)
+
+// Question # 13
+
+// var date = new Date()
+// var userAge= parseInt(prompt("Enter your age: "))
+// var year = date.getFullYear()
+// var dob = date.setFullYear(year - userAge)
+// var userBirthYear = date.getFullYear()
+
+// document.write("Your age is: "+userAge+" <br>Your Birth Year is "+userBirthYear)
+
+
+// Question # 14
+
+// var custName = "ABC Customer"
+// var month = "February"
+// var numOfUnits = 410
+// var chargePerunit = 16
+
+// document.write("<h1> K-Electric Bill </h1>")
+// document.write("<br>Customer Name: " + custName)
+// document.write("<br>Month: " + month)
+// document.write("<br>Number of units: " + numOfUnits)
+// document.write("<br>Charges per unit: " + chargePerunit + "<br>")
+// document.write("<br>Net Amount payable (within Due Date): "+(numOfUnits*chargePerunit))
+// document.write("<br> Late Payment surcharge: 350")
+// document.write("<br> Gross Amount payable (after Due Date): "+ (numOfUnits*chargePerunit+350))
+
+// ******CHAPTER # 35-38******
+
+// Question # 1
+
+// function CurrentDate(){
+//   var date = new Date()
+// document.write(date)
+// }
+// CurrentDate()
+
+// Question # 2
+
+// function GreetUser(){
+//   var firstName = prompt("Enter your first name:")
+//   var lastName = prompt("Enter your last name:")
+//   document.write("Welcome "+ firstName + " " + lastName + "!")
+// }
+// GreetUser()
+
+// Question # 3
+
+// function Sum(){
+//   var firstNumber = parseInt(prompt("Enter first number:"))
+//   var secondNumber = parseInt(prompt("Enter second number:"))
+//   document.write("The sum of two number is " + (firstNumber + secondNumber))
+// }
+// Sum()
+
+// Question # 4
+
+// function Calculator(){
+//     var num1 = parseInt(prompt("Enter first number"))
+//     var operator = prompt("Enter your operator")
+//     var num2 = parseInt(prompt("Enter second number"))
+//     if (operator === "+"){
+//         return num1 + num2
+//     }else  if (operator === "-"){
+//         return num1 - num2
+//     }else  if (operator === "/"){
+//         return num1 / num2
+//     }else  if (operator === "%"){
+//         return num1 % num2
+//     }else  if (operator === "*"){
+//         return num1 * num2
+//     }else {
+//         return "Incorrect operator"
+//     }
+// }
+// document.write(Calculator())
+
+// Question # 5
+
+// function Square(number){
+//     var sqr = number * number
+//     return sqr;
+// }
+// document.write(Square(6))
+
+// Question # 6
+
+// function Factorial(num){
+//     var fact
+//     fact = 1
+//     for (i = 1 ; i < num; i++){
+//         fact = fact * (i+1)
+//     }
+//     return fact
+// }
+// document.write(Factorial(5))
+
+// Question # 7
+
+// function Counting(first , last){
+//     for (i = first ; i <= last ; i++){
+//         document.write(i+ "<br>")
+//     }
+// }
+// var first = parseInt(prompt("Enter starting number of Countring: "))
+// var last = parseInt(prompt("Enter last number of Countring: "))
+// Counting(first , last)
+
+// Question # 8
+
+function calculateHypotenuse(perp, base) {
+    var hyp = (perp * perp) + (base * base)
+    function calculateSquare(hyp){
+        var sqr = hyp * hyp
+        return sqr;
     }
 }
-if (flag == false){
-    document.write("We are sorry "+food+" is not available at our bakery")
-}
+
+// Question # 9
+// Question # 10
+// Question # 11
+// Question # 12
+// Question # 13
+// Question # 14
