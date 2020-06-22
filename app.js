@@ -451,17 +451,99 @@
 
 // Question # 8
 
-function calculateHypotenuse(perp, base) {
-    var hyp = (perp * perp) + (base * base)
-    function calculateSquare(hyp){
-        var sqr = hyp * hyp
-        return sqr;
-    }
-}
+// function calculateHypotenuse(perp, base) {   
+//     function calculateSquare(number){
+//         var sq = number * number
+//         return sq                       
+//     }
+//     var hyp = calculateSquare(perp) + calculateSquare(base)
+//     hyp = Math.sqrt(hyp)
+//     return hyp; 
+// }
+// var base = parseInt(prompt("Enter base of right angle triangle: "))
+// var perp = parseInt(prompt("Enter perpendicular of right angle triangle: "))
+// document.write( "The hypotenuse of right angle triangle is " +calculateHypotenuse(4, 3))
 
 // Question # 9
+
+// function areaOfRectangle(height ,width){
+//     return height * width
+// }
+// document.write(areaOfRectangle(4 , 3)+ "<br>")
+// var height = parseInt(prompt("Enter height of rectangle: "))
+// var width = parseInt(prompt("Enter width of rectangle: "))
+// document.write(areaOfRectangle(height, width))
+
 // Question # 10
+
+// var st = "the quick brown fox"
+// function upperCase(string){
+//     var array = string.split(" ")
+//     var upperArray = []
+//     for (element of array){
+//         var firstLetter = element.slice(0,1)
+//         firstLetter = firstLetter.toUpperCase()
+//         var otherLetters = element.slice(1)
+//         otherLetters = otherLetters.toLowerCase()
+//         var letter = firstLetter + otherLetters
+//         upperArray.push(letter)
+
+//     }
+//     return upperArray.join(" ")
+// }
+
+// document.write(upperCase(st))
+
 // Question # 11
+
+
+
 // Question # 12
+
+// var string = "Web Development Tutorial"
+// function longestWord(string) {
+//     var array = string.split(" ")
+//     var longestStr = array[0]
+//     for (element of array){
+//         if (element.length > longestStr.length){
+//             longestStr = element
+//         }
+//     }
+    
+//     return longestStr
+// }
+// var sp = longestWord(string)
+// document.write(sp)
+
 // Question # 13
+
+// var string = "JSResourceS.com"
+// var letter = "o"
+// function countLetter(string , letter){
+//     var array = string.split("")
+//     var count = 0
+//     for (element of array){
+//         if (element === letter){
+//             count = count + 1
+//         }    
+//     }
+//     return count
+// }
+// document.write(countLetter(string , letter))
+
 // Question # 14
+
+// function calcCircumference(radius) {
+//     var circumference = 2 * 3.142 * radius
+//     return circumference
+// }
+
+// function calcArea(radius) {
+//     var area = 3.142 * (radius * radius)
+//     return area
+// }
+
+// var radius = parseInt(prompt("Enter radius of circle:" ))
+// document.write("The circumference of circle is " +calcCircumference(radius))
+// document.write("<br> The area of circle is " +calcArea(radius))
+
