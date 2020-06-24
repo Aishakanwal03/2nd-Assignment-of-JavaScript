@@ -99,17 +99,17 @@
 // Question # 13
 
 // var userInput = prompt("Enter your name:")
-// var userName = userInput
-// var specialChar = ["@", ",", ".","!"]
+// var specialChar = "@.,!"
 // for (i = 0 ; i <= specialChar.length ; i++) {
-//     for (j = 0 ; j<= userName.length ; j++){
-//         if (specialChar[i] == userName[j]){
-//             alert(specialChar , userName)
-//             break
+//     var charCode = specialChar.charCodeAt(i)
+//     for (j = 0 ; j<= userInput.length ; j++){
+//         var userCode = userInput.charCodeAt(j)
+//         if (userCode == charCode){
+//             alert("Enter a valid user name: ")
+           
 //         }
 //     }
 // }
-// alert("Your Name is: "+userName)
 
 // Question # 14
 
@@ -129,6 +129,26 @@
 
 // Question # 15
 
+// var userInput = prompt("Enter Password:")
+// var flag = false
+// for (i = 1 ; i <= userInput.length ; i++){
+//     if (userInput[i] <= 10 || userInput[i] >= 0 ){
+//         flag = true
+//     }
+// }
+
+// if (flag == true){
+
+//     if (userInput[0] <= 10 && userInput[0] >= 0) {
+//         alert("Invalid Password!\nPassword must begins with a letter.\nPassword must contain a number.\nPassword must be at least six characters long.")   
+//     }else if (userInput.length < 6 ){
+//         alert("Invalid Password!\nPassword must begins with a letter.\nPassword must contain a number.\nPassword must be at least six characters long.")
+//     }else{
+//         alert("Welcome :)")
+//     }
+// }else {
+//     alert("Invalid Password!\nPassword must begins with a letter.\nPassword must contain a number.\nPassword must be at least six characters long.")
+// }
 
 
 // Question # 16
@@ -217,8 +237,17 @@
 // Question # 7
 
 // var weight = prompt("Enter your weight in Kilograms")
-// var arr = weight.split()
-
+// var userWeight = ""
+// for (i = 0 ; i <= weight.length ; i++){
+//     var code = weight.charCodeAt(i)
+//     if (weight[i] <= 10 && weight[i] >= 0){
+//         userWeight += weight[i]
+//     }else if(code == 46){
+//         userWeight += "."
+//     }
+// }
+// userWeight = eval(userWeight)
+// document.write("The weight of user is " + userWeight + "Kilogram")
 
 
 
@@ -476,6 +505,20 @@
 
 // Question # 10
 
+// var input = prompt("Enter some text:")
+// userInput = input.toLowerCase()
+// var word = ""
+// for (i = userInput.length - 1 ; i >= 0 ; i--){
+//     word += userInput[i].toLowerCase()
+// }
+// if (userInput === word) {
+//     document.write(input + " is palindrome")
+// }else{
+//     document.write(input + " is not palindrome")
+// }
+
+// Question # 11
+
 // var st = "the quick brown fox"
 // function upperCase(string){
 //     var array = string.split(" ")
@@ -493,10 +536,6 @@
 // }
 
 // document.write(upperCase(st))
-
-// Question # 11
-
-
 
 // Question # 12
 
